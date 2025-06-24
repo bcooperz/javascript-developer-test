@@ -27,7 +27,7 @@ const getArnieQuotes = async (urls) => {
     return transformResponse(response);
   });
 
-  return await Promise.all(promises);
+  return Promise.all(promises);
 };
 
 module.exports = {
